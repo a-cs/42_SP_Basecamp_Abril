@@ -6,7 +6,7 @@
 /*   By: acarneir <acarneir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/15 23:39:50 by acarneir          #+#    #+#             */
-/*   Updated: 2021/04/16 02:40:48 by acarneir         ###   ########.fr       */
+/*   Updated: 2021/04/16 20:31:59 by acarneir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ int	ft_is_prime(int nb)
 	if (nb <= 1)
 		return (0);
 	else if (nb != 2 && nb % 2 == 0)
+		return (0);
+	else if (nb != 3 && nb % 3 == 0)
 		return (0);
 	else if (nb == 2 || nb == 3)
 		return (1);
